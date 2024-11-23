@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const BASE_URL = process.env.BASE_URL
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 6002;
 
 require('./db/connection.js');
 const router = require('./routes/routers.js')
